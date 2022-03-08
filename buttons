@@ -1,0 +1,195 @@
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class gui{
+    public static void main(String[] args) {
+        //creating a JFrame
+        JFrame frame = new JFrame("im bored");
+        //creating objects to add to the gui
+        //first row of buttons
+        JButton button = new JButton("click");
+        JButton button1 = new JButton("click");
+        JButton button2 = new JButton("click");
+        JButton button3 = new JButton("click");
+        JButton button4 = new JButton("click");
+        JButton button5 = new JButton("click");
+        JButton button6 = new JButton("click");
+        JButton button7 = new JButton("click");
+        JButton button8 = new JButton("click");
+        JButton button9 = new JButton("click");
+        JButton button10 = new JButton("click");
+        //second row of buttons
+        JButton button11 = new JButton("click");
+        JButton button12 = new JButton("click");
+        JButton button13 = new JButton("click");
+        JButton button14 = new JButton("click");
+        JButton button15 = new JButton("click");
+        JButton button16 = new JButton("click");
+        JButton button17 = new JButton("click");
+        JButton button18 = new JButton("click");
+        JButton button19 = new JButton("click");
+        JButton button20 = new JButton("click");
+        JButton button21 = new JButton("click");
+        //third row of buttons
+        JButton button22 = new JButton("click");
+        JButton button23 = new JButton("click");
+        JButton button24 = new JButton("click");
+        JButton button25 = new JButton("click");
+        JButton button26 = new JButton("click");
+        JButton button27 = new JButton("click");
+        JButton button28 = new JButton("click");
+        JButton button29 = new JButton("click");
+        JButton button30 = new JButton("click");
+        JButton button31 = new JButton("click");
+        JButton button32 = new JButton("click");
+
+        //adding properties to the objects
+        //first row of buttons
+        button.setBounds(0,0,100,100);
+        button1.setBounds(100,0,100,100);
+        button1.setVisible(false);
+        button2.setBounds(200,0,100,100);
+        button2.setVisible(false);
+        button3.setBounds(300,0,100,100);
+        button3.setVisible(false);
+        button4.setBounds(400,0,100,100);
+        button4.setVisible(false);
+        button5.setBounds(500,0,100,100);
+        button5.setVisible(false);
+        button6.setBounds(600,0,100,100);
+        button6.setVisible(false);
+        button7.setBounds(700,0,100,100);
+        button7.setVisible(false);
+        button8.setBounds(800,0,100,100);
+        button8.setVisible(false);
+        button9.setBounds(900,0,100,100);
+        button9.setVisible(false);
+        button10.setBounds(1000,0,100,100);
+        button10.setVisible(false);
+        //second row of buttons
+        button11.setBounds(0,100,100,100);
+        button11.setVisible(false);
+        button12.setBounds(100,100,100,100);
+        button12.setVisible(false);
+        button13.setBounds(200,100,100,100);
+        button13.setVisible(false);
+        button14.setBounds(300,100,100,100);
+        button14.setVisible(false);
+        button15.setBounds(400,100,100,100);
+        button15.setVisible(false);
+        button16.setBounds(500,100,100,100);
+        button16.setVisible(false);
+        button17.setBounds(600,100,100,100);
+        button17.setVisible(false);
+        button18.setBounds(700,100,100,100);
+        button18.setVisible(false);
+        button19.setBounds(800,100,100,100);
+        button19.setVisible(false);
+        button20.setBounds(900,100,100,100);
+        button20.setVisible(false);
+        button21.setBounds(1000,100,100,100);
+        button21.setVisible(false);
+        //third row of buttons
+        button22.setBounds(0,200,100,100);
+        button22.setVisible(false);
+        button23.setBounds(100,200,100,100);
+        button23.setVisible(false);
+        button24.setBounds(200,200,100,100);
+        button24.setVisible(false);
+        button25.setBounds(300,200,100,100);
+        button25.setVisible(false);
+        button26.setBounds(400,200,100,100);
+        button26.setVisible(false);
+        button27.setBounds(500,200,100,100);
+        button27.setVisible(false);
+        button28.setBounds(600,200,100,100);
+        button28.setVisible(false);
+        button29.setBounds(700,200,100,100);
+        button29.setVisible(false);
+        button30.setBounds(800,200,100,100);
+        button30.setVisible(false);
+        button31.setBounds(900,200,100,100);
+        button31.setVisible(false);
+        button32.setBounds(1000,200,100,100);
+        button32.setVisible(false);
+        //giving the frame basic living needs
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(1000,1000);
+        frame.setLayout(null);
+        //adding the objects to the frame
+        //first row of buttons
+        frame.add(button);
+        frame.add(button1);
+        frame.add(button2);
+        frame.add(button3);
+        frame.add(button4);
+        frame.add(button5);
+        frame.add(button6);
+        frame.add(button7);
+        frame.add(button8);
+        frame.add(button9);
+        frame.add(button10);
+        //second row of buttons
+        frame.add(button11);
+        frame.add(button12);
+        frame.add(button13);
+        frame.add(button14);
+        frame.add(button15);
+        frame.add(button16);
+        frame.add(button17);
+        frame.add(button18);
+        frame.add(button19);
+        frame.add(button20);
+        frame.add(button21);
+        //third row of buttons
+        frame.add(button22);
+        frame.add(button23);
+        frame.add(button24);
+        frame.add(button25);
+        frame.add(button26);
+        frame.add(button27);
+        frame.add(button28);
+        frame.add(button29);
+        frame.add(button30);
+        frame.add(button31);
+        frame.add(button32);
+        //giving the buttons functions when they're clicked
+        //the first row of buttons
+        button.addActionListener(e -> button1.setVisible(true));
+        button1.addActionListener(e -> button2.setVisible(true));
+        button2.addActionListener(e -> button3.setVisible(true));
+        button3.addActionListener(e -> button4.setVisible(true));
+        button4.addActionListener(e -> button5.setVisible(true));
+        button5.addActionListener(e -> button6.setVisible(true));
+        button6.addActionListener(e -> button7.setVisible(true));
+        button7.addActionListener(e -> button8.setVisible(true));
+        button8.addActionListener(e -> button9.setVisible(true));
+        button9.addActionListener(e -> button10.setVisible(true));
+        //the second row of buttons
+        button10.addActionListener(e -> button11.setVisible(true));
+        button11.addActionListener(e -> button12.setVisible(true));
+        button12.addActionListener(e -> button13.setVisible(true));
+        button13.addActionListener(e -> button14.setVisible(true));
+        button14.addActionListener(e -> button15.setVisible(true));
+        button15.addActionListener(e -> button16.setVisible(true));
+        button16.addActionListener(e -> button17.setVisible(true));
+        button17.addActionListener(e -> button18.setVisible(true));
+        button18.addActionListener(e -> button19.setVisible(true));
+        button19.addActionListener(e -> button20.setVisible(true));
+        button20.addActionListener(e -> button21.setVisible(true));
+        //the third row of buttons
+        button21.addActionListener(e -> button22.setVisible(true));
+        button22.addActionListener(e -> button23.setVisible(true));
+        button23.addActionListener(e -> button24.setVisible(true));
+        button24.addActionListener(e -> button25.setVisible(true));
+        button25.addActionListener(e -> button26.setVisible(true));
+        button26.addActionListener(e -> button27.setVisible(true));
+        button27.addActionListener(e -> button28.setVisible(true));
+        button28.addActionListener(e -> button29.setVisible(true));
+        button29.addActionListener(e -> button30.setVisible(true));
+        button30.addActionListener(e -> button31.setVisible(true));
+        button31.addActionListener(e -> button32.setVisible(true));
+    }
+}
