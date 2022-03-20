@@ -14,6 +14,7 @@ public class Buttons{
         JButton pog = new JButton("pog \uD83D\uDE31");
         JButton amogus = new JButton("amogus ඞ");
         JButton cry = new JButton("cry \uD83D\uDE2D");
+        JButton smile = new JButton("\uD83D\uDE42");
         //first row of buttons
         JButton button = new JButton("click");
         JButton button1 = new JButton("click");
@@ -123,6 +124,7 @@ public class Buttons{
         pog.setBounds(1100,850,200,50);
         amogus.setBounds(1300,850,200,50);
         cry.setBounds(1500,850,200,50);
+        smile.setBounds(1500,0,200,50);
         //first row of buttons
         button.setBounds(0,0,100,100);
         button1.setBounds(100,0,100,100);
@@ -321,6 +323,7 @@ public class Buttons{
         frame.add(pog);
         frame.add(amogus);
         frame.add(cry);
+        frame.add(smile);
         //first row of buttons
         frame.add(button);
         frame.add(button1);
@@ -418,6 +421,52 @@ public class Buttons{
         frame.add(button86);
         frame.add(button87);
         //giving the buttons functions when they're clicked
+        smile.addActionListener(e -> {
+            textArea.setText(
+                    "¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\n" +
+                            "¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\n" +
+                            "¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶$¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\n" +
+                            "¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶8____________v$¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\n" +
+                            "¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶$¶$v_____________________q¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\n" +
+                            "¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶v___________________________v¶¶¶¶¶¶¶¶¶¶¶¶¶¶\n" +
+                            "¶¶¶¶¶¶¶¶¶¶¶¶¶v_________________________________8¶¶¶¶¶¶¶¶¶¶¶\n" +
+                            "¶¶¶¶¶¶¶¶¶¶¶$_____________________________________$¶¶¶¶¶¶¶¶¶\n" +
+                            "¶¶¶¶¶¶¶¶¶¶o_______q¶¶¶¶3_____________$¶¶¶$________q¶¶¶¶¶¶¶¶\n" +
+                            "¶¶¶¶¶¶¶¶¶________¶¶¶¶¶¶¶¶o_________$¶¶¶¶¶¶¶$_______o¶¶¶¶¶¶¶\n" +
+                            "¶¶¶¶¶¶¶$________v¶¶¶¶¶¶¶¶¶________q¶¶¶$¶¶¶¶¶v_______q¶¶¶¶¶¶\n" +
+                            "¶¶¶¶¶$¶_________8¶¶¶¶¶¶¶¶¶________8¶¶¶¶¶¶¶¶¶3________8¶$¶¶¶\n" +
+                            "¶¶¶¶¶¶___________¶¶¶¶¶¶¶¶¶________v¶¶¶¶¶¶¶¶¶__________¶¶¶¶¶\n" +
+                            "¶¶¶¶¶¶___________¶¶¶¶¶¶¶¶__________8¶¶¶¶¶¶¶3__________q¶¶¶¶\n" +
+                            "¶¶¶¶¶¶____________$¶¶¶¶$____________v¶¶¶¶¶____________o¶¶¶¶\n" +
+                            "¶¶¶¶¶¶________________________________________________o¶¶¶¶\n" +
+                            "¶¶¶¶¶¶________________________________________________q¶¶¶¶\n" +
+                            "¶¶¶¶¶¶___v8¶¶v_________________________________¶¶¶q__v$¶$¶¶\n" +
+                            "¶¶¶¶¶¶q_____¶3________________________________3¶o____o¶¶¶¶¶\n" +
+                            "¶¶¶¶¶¶¶______q¶q_____________________________¶3_____v$¶¶¶¶¶\n" +
+                            "¶¶¶¶¶¶¶¶________3¶o______________________o$$_______v$¶¶¶¶¶¶\n" +
+                            "¶¶¶¶¶¶¶¶¶__________$¶¶q_______________$¶$_________v$¶¶¶¶¶¶¶\n" +
+                            "¶¶¶¶¶¶¶¶¶¶q____________q$¶¶¶¶¶¶¶¶¶$$q___________vo8¶¶¶¶¶¶¶¶\n" +
+                            "¶¶¶¶¶¶¶¶¶¶¶¶_________________________________vvo8¶¶¶¶¶¶¶¶¶¶\n" +
+                            "¶¶¶¶¶¶¶¶¶¶¶$¶$v____________________________vvo8¶¶$¶¶¶¶¶¶¶¶¶\n" +
+                            "¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶q_______________________vvvo3¶¶¶¶¶¶¶¶¶¶¶¶¶¶\n" +
+                            "¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶3v______________vvvq88¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\n" +
+                            "¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶$3qqooqqq8¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\n" +
+                            "¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶$¶¶¶¶¶¶¶¶¶$¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶\n");
+                    //left eye
+                    button14.setBackground(Color.black);
+                    button25.setBackground(Color.black);
+                    //right eye
+                    button18.setBackground(Color.black);
+                    button29.setBackground(Color.black);
+                    //smile
+                    button46.setBackground(Color.black);
+                    button52.setBackground(Color.black);
+                    button58.setBackground(Color.black);
+                    button62.setBackground(Color.black);
+                    button70.setBackground(Color.black);
+                    button71.setBackground(Color.black);
+                    button72.setBackground(Color.black);
+        });
         cry.addActionListener(e ->textArea.setText(
                 "⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⠔⠒⠒⠒⠒⠒⠢⠤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
                 "⠀⠀⠀⠀⠀⠀⠀⡰⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠑⢄⡀⠀⠀⠀⠀⠀⠀⠀\n" +
