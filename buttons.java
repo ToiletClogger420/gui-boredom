@@ -1,6 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-
 public class Buttons{
     public static void main(String[] args) {
         //creating a JFrame
@@ -8,6 +7,13 @@ public class Buttons{
         //creating objects to add to the gui
         JButton darkMode = new JButton("dark mode");
         JButton lightMode = new JButton("light mode");
+        JTextArea textArea = new JTextArea("type something...");
+        JButton pacerTest = new JButton("Fitness Gram Pacer Test");
+        JButton helicopter = new JButton("helicopter \uD83D\uDE81");
+        JButton salt = new JButton("salt \uD83E\uDDC2");
+        JButton pog = new JButton("pog \uD83D\uDE31");
+        JButton amogus = new JButton("amogus ඞ");
+        JButton cry = new JButton("cry \uD83D\uDE2D");
         //first row of buttons
         JButton button = new JButton("click");
         JButton button1 = new JButton("click");
@@ -108,6 +114,15 @@ public class Buttons{
         darkMode.setBounds(1100,0,200,50);
         darkMode.setBackground(Color.black);
         lightMode.setBounds(1300,0,200,50);
+        lightMode.setBackground(Color.white);
+        textArea.setLocation(1100,50);
+        textArea.setSize(576,750);
+        pacerTest.setBounds(1100,800,200,50);
+        helicopter.setBounds(1300,800,200,50);
+        salt.setBounds(1500,800,200,50);
+        pog.setBounds(1100,850,200,50);
+        amogus.setBounds(1300,850,200,50);
+        cry.setBounds(1500,850,200,50);
         //first row of buttons
         button.setBounds(0,0,100,100);
         button1.setBounds(100,0,100,100);
@@ -297,8 +312,15 @@ public class Buttons{
         frame.setSize(1100,900);
         frame.setLayout(null);
         //adding the objects to the frame
+        frame.add(textArea);
         frame.add(darkMode);
         frame.add(lightMode);
+        frame.add(pacerTest);
+        frame.add(helicopter);
+        frame.add(salt);
+        frame.add(pog);
+        frame.add(amogus);
+        frame.add(cry);
         //first row of buttons
         frame.add(button);
         frame.add(button1);
@@ -396,6 +418,103 @@ public class Buttons{
         frame.add(button86);
         frame.add(button87);
         //giving the buttons functions when they're clicked
+        cry.addActionListener(e ->textArea.setText(
+                "⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⠔⠒⠒⠒⠒⠒⠢⠤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
+                "⠀⠀⠀⠀⠀⠀⠀⡰⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠑⢄⡀⠀⠀⠀⠀⠀⠀⠀\n" +
+                "⠀⠀⠀⠀⠀⠀⡸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠙⠄⠀⠀⠀⠀⠀⠀\n" +
+                "⠀⠀⠀⠀⠀⢀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠃⠀⢠⠂⠀⠀⠘⡄⠀⠀⠀⠀⠀\n" +
+                "⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠈⢤⡀⢂⠀⢨⠀⢀⡠⠈⢣⠀⠀⠀⠀⠀\n" +
+                "⠀⠀⠀⠀⠀⢀⢀⡖⠒⠶⠤⠭⢽⣟⣗⠲⠖⠺⣖⣴⣆⡤⠤⠤⠼⡄⠀⠀⠀⠀\n" +
+                "⠀⠀⠀⠀⠀⠘⡈⠃⠀⠀⠀⠘⣺⡟⢻⠻⡆⠀⡏⠀⡸⣿⢿⢞⠄⡇⠀⠀⠀⠀\n" +
+                "⠀⠀⠀⠀⠀⠀⢣⡀⠤⡀⡀⡔⠉⣏⡿⠛⠓⠊⠁⠀⢎⠛⡗⡗⢳⡏⠀⠀⠀⠀\n" +
+                "⠀⠀⠀⠀⠀⠀⠀⢱⠀⠨⡇⠃⠀⢻⠁⡔⢡⠒⢀⠀⠀⡅⢹⣿⢨⠇⠀⠀⠀⠀\n" +
+                "⠀⠀⠀⠀⠀⠀⠀⢸⠀⠠⢼⠀⠀⡎⡜⠒⢀⠭⡖⡤⢭⣱⢸⢙⠆⠀⠀⠀⠀⠀\n" +
+                "⠀⠀⠀⠀⠀⠀⠀⡸⠀⠀⠸⢁⡀⠿⠈⠂⣿⣿⣿⣿⣿⡏⡍⡏⠀⠀⠀⠀⠀⠀\n" +
+                "⠀⠀⠀⠀⠀⠀⢀⠇⠀⠀⠀⠀⠸⢢⣫⢀⠘⣿⣿⡿⠏⣼⡏⠀⠀⠀⠀⠀⠀⠀\n" +
+                "⠀⠀⠀⠀⣀⣠⠊⠀⣀⠎⠁⠀⠀⠀⠙⠳⢴⡦⡴⢶⣞⣁⣀⣀⡀⠀⠀⠀⠀⠀\n" +
+                "⠀⠐⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠀⢀⠤⠀⠀⠀⠀⠀⠀⠀⠈⠉⠀⠀⠀⠀"));
+        amogus.addActionListener(e ->textArea.setText(
+                "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣤⣤⣀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀\n" +
+                "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⠟⠉⠉⠉⠉⠉⠉⠉⠙⠻⢶⣄⠀⠀⠀⠀⠀\n" +
+                "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣷⡀⠀⠀⠀\n" +
+                "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⡟⠀⣠⣶⠛⠛⠛⠛⠛⠛⠳⣦⡀⠀⠘⣿⡄⠀⠀\n" +
+                "⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⠁⠀⢹⣿⣦⣀⣀⣀⣀⣀⣠⣼⡇⠀⠀⠸⣷⠀⠀\n" +
+                "⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⡏⠀⠀⠀⠉⠛⠿⠿⠿⠿⠛⠋⠁⠀⠀⠀⠀⣿⡄⣠\n" +
+                "⠀⠀⢀⣀⣀⣀⠀⠀⢠⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⡇⠀\n" +
+                "⠿⠿⠟⠛⠛⠉⠀⠀⣸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀\n" +
+                " ⠀⠀⠀⠀⠀⠀⠀⠀⣿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣧⠀\n" +
+                "⠀ ⠀⠀⠀⠀⠀⠀⢸⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⠀\n" +
+                "⠀⠀ ⠀⠀⠀⠀⠀⣾⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀\n" +
+                "⠀⠀⠀⠀⠀⠀⠀⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀\n" +
+                "⠀⠀⠀⠀⠀⠀⢰⣿⠀⠀⠀⠀⣠⡶⠶⠿⠿⠿⠿⢷⣦⠀⠀⠀⠀⠀⠀⣿⠀\n" +
+                "⠀⠀⣀⣀⣀⠀⣸⡇⠀⠀⠀⠀⣿⡀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⠀⣿⠀\n" +
+                "⣠⡿⠛⠛⠛⠛⠻⠀⠀⠀⠀⠀⢸⣇⠀⠀⠀⠀⠀⠀⣿⠇⠀⠀⠀⠀⠀⠀⣿⠀\n" +
+                "⢻⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⡟⠀⠀⢀⣤⣤⣴⣿⠀⠀⠀⠀⠀⠀⠀⣿⠀\n" +
+                "⠈⠙⢷⣶⣦⣤⣤⣤⣴⣶⣾⠿⠛⠁⢀⣶⡟⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡟⠀\n" +
+                "⢷⣶⣤⣀⠉⠉⠉⠉⠉⠄⠀⠀⠀⠀⠈⣿⣆⡀⠀⠀⠀⠀⠀⠀⢀⣠⣴⡾⠃⠀\n" +
+                "⠀⠈⠉⠛⠿⣶⣦⣄⣀⠀⠀⠀⠀⠀⠀⠈⠛⠻⢿⣿⣾⣿⡿⠿⠟⠋⠁⠀⠀⠀"));
+        pog.addActionListener(e -> textArea.setText(
+                "⠄⠄⠄⠄⠄⠄⣀⣀⣀⣤⣶⣿⣿⣶⣶⣶⣤⣄⣠⣴⣶⣿⣿⣿⣿⣶⣦⣄⠄⠄\n" +
+                "⠄⠄⣠⣴⣾⣿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦\n" +
+                "⢠⠾⣋⣭⣄⡀⠄⠄⠈⠙⠻⣿⣿⡿⠛⠋⠉⠉⠉⠙⠛⠿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
+                "⡎⣾⡟⢻⣿⣷⠄⠄⠄⠄⠄⡼⣡⣾⣿⣿⣦⠄⠄⠄⠄⠄⠈⠛⢿⣿⣿⣿⣿⣿\n" +
+                "⡇⢿⣷⣾⣿⠟⠄⠄⠄⠄⢰⠁⣿⣇⣸⣿⣿⠄⠄⠄⠄⠄⠄⠄⣠⣼⣿⣿⣿⣿\n" +
+                "⢸⣦⣭⣭⣄⣤⣤⣤⣴⣶⣿⣧⡘⠻⠛⠛⠁⠄⠄⠄⠄⣀⣴⣿⣿⣿⣿⣿⣿⣿\n" +
+                "⠄⢉⣹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣦⣶⣶⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
+                "⢰⡿⠛⠛⠛⠛⠻⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
+                "⠸⡇⠄⠄⢀⣀⣀⠄⠄⠄⠄⠄⠉⠉⠛⠛⠻⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
+                "⠄⠈⣆⠄⠄⢿⣿⣿⣿⣷⣶⣶⣤⣤⣀⣀⡀⠄⠄⠉⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
+                "⠄⠄⣿⡀⠄⠸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠂⠄⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
+                "⠄⠄⣿⡇⠄⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠃⠄⢀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
+                "⠄⠄⣿⡇⠄⠠⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠄⠄⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n" +
+                "⠄⠄⣿⠁⠄⠐⠛⠛⠛⠛⠉⠉⠉⠉⠄⠄⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿\n" +
+                "⠄⠄⠻⣦⣀⣀⣀⣀⣀⣀⣤⣤⣤⣤⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠄\n" +
+                "⣿⣿⣿⣿⡿⠟⠛⠛⠛⠛⠉⠉⠙⠛⠛⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠟\n" +
+                        "⣿⣿⣯⣥⣤⣶⣶⣶⣶⣿⣿⣿⣿⣿⣿⣷⣾⣿⣿⣿⣿⣿⣿⣿⣏⣀⣀⣀⡀\n" +
+                        "⣿⣿⣿⣿⣿⣿⣿⡿⠿⠛⠛⠻⠿⠟⠉⠉⠉⢻⣿⣿⣿⡿⠟⠋⣡⣼⣿⣿⣿⡄\n" +
+                        "⣿⣿⣿⣟⣭⣤⣶⣶⣿⣿⠃⠀⠀⢀⣀⣤⣶⣿⣿⣿⣿⡅⡀⢀⣩⣤⣤\n" +
+                        "⣿⣿⣿⣿⣿⣿⣛⡛⠛⠛⠛⢋⣩⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣛⠛⠛⠓⠠\n" +
+                        "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣤⣤⣤⣦\n" +
+                        "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇\n" +
+                        "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⠿⠿⠿⢿⡿⢿⣿⣿⣿⠃\n" +
+                        "⠿⠿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣥⣄⣀⣀⠀⠀⠀⠀⠀⢰⣾⣿⣿⠏\n" +
+                        "⠀⠀⠀⠀⠀⠀⠉⣩⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣤⣜⡻⠋\n" +
+                        "⣰⣾⣷⣶⣿⣾⣖⣻⣿⣿⡿⣿⣿⣿⣿⠿⠿⠟⠛⠛⠛⠋⠉⠉⢉⡽⠃\n" +
+                        "⣿⣿⣿⣿⣿⣿⡉⠉⠉⠛⠛⠛⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⡤⠚⠉\n" +
+                        "⠛⠛⣿⣿⣿⣿⣿⣿⣿⠉⠛⢶⣶⣄⠀⠀⠀⠀⠀⠀⠀⠀⡇\n" +
+                        "⠠⣾⣿⣿⣿⣿⣿⠿⠟⠃⠀⠀⠀⠈⠲⣴⣦⣤⣤⣤⣶⡾⠁\n" +
+                        "⠄⠈⠉⠻⢿⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠛⠛⠉"));
+        salt.addActionListener(e -> textArea.setText(
+                "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣶⣶⣦⣀⠀⠀⠀⠀\n" +
+                "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣶⣾⣿⣿⡿⠟⠋⣡⣽⡳⡄⠀⠀\n" +
+                "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣾⣿⣿⣿⣿⠛⢿⣷⣴⣿⣷⡹⣿⣿⣞⣆⠀\n" +
+                "⠀⠀⠀⠀⠀⠀⠀⣠⠴⣾⣿⡿⢋⣉⣿⣿⠻⣿⣷⡈⢿⣿⣿⣿⣷⡘⣿⣿⡞⡄\n" +
+                "⠀⠀⠀⠀⠀⠀⢸⡟⠳⣮⢻⣧⡘⠿⣿⣿⡸⠝⢿⣿⡌⠟⣉⣬⣿⣿⣿⣿⡇⠇\n" +
+                "⠀⠀⠀⠀⠀⠀⢸⠀⠀⠈⠷⡹⣿⣶⡄⠹⣧⠰⣦⣹⣿⣾⣿⣿⣿⣿⣿⢿⡇⡀\n" +
+                "⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠱⡹⣿⠋⣰⣿⣶⣿⣿⣿⣿⣿⣿⣿⣿⠿⠚⢡⠃\n" +
+                "⠀⠀⠀⠀⠀⠀⠘⡀⣽⣦⠀⠀⢱⢹⣿⣿⡿⠟⠋⢹⣻⡽⠿⠛⢉⠠⠔⠊⠁⠀\n" +
+                "⠀⠀⠀⠀⠀⠀⠀⠱⡈⠇⠡⠀⠀⡆⣿⣟⣠⠴⠚⠉⣀⠤⠒⠉⠀⠀⠀⠀⠀⠀\n" +
+                "⠀⠀⠀⠀⢀⠤⡀⠀⠑⣌⠂⠀⢀⣇⠇⠉⣀⠤⠒⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
+                "⠀⠀⠠⠊⠁⠀⠈⠰⢄⠈⠙⠿⠻⠞⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
+                "⢠⣊⡁⠀⠀⠀⠀⠀⠀⠗⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
+                "⠀⠀⠉⠒⠁⠒⠒⠒⠚⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀"));
+        helicopter.addActionListener(e -> textArea.setText
+                ("I sexually Identify as an Attack Helicopter.\n" +
+                        "Ever since I was a boy I dreamed of soaring over the oilfields dropping hot stinky loads on foreigners.\n" +
+                        "People say to me that a person being a helicopter is Impossible and I'm dumb but I don't care,I'm beautiful.\n" +
+                        "I'm having a surgeon install rotary blades, 30 mm cannons and AMG-114 Hellfire missiles on my body.\n" +
+                        "From now on I want you guys to call me \"Apache\" and respect my right to kill needlessly from above.\n" +
+                        "If you can't accept me you're a heliphobe and need to check your vehicle privilege.\n" +
+                        "Thank you for being so understanding."));
+        pacerTest.addActionListener(e -> textArea.setText
+                ("The FitnessGram™ Pacer Test is a multistage aerobic capacity test that \n" +
+                "progressively gets more difficult as it continues.The 20 meter pacer test\n" +
+                        "will begin in 30 seconds. Line up at the start. The running speed starts\n" +
+                        "slowly, but gets faster each minute after you hear this signal. [beep]\n" +
+                        "A single lap should be completed each time you hear this sound. [ding]\n" +
+                        "Remember to run in a straight line, and run as long as possible.\n" +
+                        "The second time you fail to complete a lap before the sound your test is over.\n" +
+                        "The test will begin on the word start. On your mark, get ready, start."));
         darkMode.addActionListener(e -> {
             frame.setBackground(Color.black);
             button.setBackground(Color.black);
@@ -489,6 +608,7 @@ public class Buttons{
         });
         lightMode.addActionListener(e -> {
             frame.setBackground(Color.white);
+            textArea.setBackground(Color.white);
             button.setBackground(Color.white);
             button1.setBackground(Color.white);
             button2.setBackground(Color.white);
